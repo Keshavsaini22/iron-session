@@ -5,7 +5,7 @@ import LoginForm from "@/components/loginform/page";
 const LoginPage = async () => {
   const session = await getSession();
 
-  if (session.isLoggedIn) {
+  if (session!.isLoggedIn) {
     redirect("/");
   }
 
